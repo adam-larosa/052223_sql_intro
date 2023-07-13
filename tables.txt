@@ -2,17 +2,41 @@
 What a SQL database is, is a collection of "tables".
 
 class Cat:
-    def __init__( self, name, age ):
-	self.name = name
-	self.age = age
+    def __init__( self, name, age, owner_id ):
 
 
 				CATS
-pID	name		age
---	----		---
-1	Luke		4
-2	Leia		4
-3	Rose		7
+pID	name		age	
+--	----		---		
+1	Luke		4		
+2	Leia		4		
+3	Rose		7		
+
+				CAT_OWNERS
+pID		owner_id		cat_id
+---		-------			-----
+5		54			1
+6		54			2
+7		55			1
+
+				OWNERS
+pID	name		address	
+---	----		-------		
+54	adam		SF
+55	emiley		SJ
+
+Example of seeing all the cats a particular owner has many of?
+
+	SELECT cats.name, cats.age FROM cats
+	JOIN cat_owners ON cat_owners.cat_id = cats.id
+	WHERE cat_owners.owner_id = ?????
+
+
+
+
+
+
+
 
 
 
