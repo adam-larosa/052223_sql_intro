@@ -1,0 +1,18 @@
+
+What a SQL database is, is a collection of "tables".
+
+class Cat:
+    def __init__( self, name, age ):
+	self.name = name
+	self.age = age
+
+
+				CATS
+pID	name		age
+--	----		---
+1	Luke		4
+2	Leia		4
+3	Rose		7
+
+
+
